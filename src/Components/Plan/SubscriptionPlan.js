@@ -1,9 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
+import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
-import Button from "@material-ui/core/Button";
+import icon1 from "./images/icon1.jpg";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -19,23 +20,14 @@ const useStyles = makeStyles((theme) => ({
 function SubscriptionPlan() {
   const classes = useStyles();
   const [price, setPrice] = React.useState("");
-  const [open, setOpen] = React.useState(false);
 
   const handleChange = (event) => {
     setPrice(event.target.value);
   };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
   return (
     <div>
-      <Button className={classes.button} onClick={handleOpen}>
+      {/* <Button className={classes.button} onClick={handleOpen}>
         <div class="whole-wrap">
           <img src="" alt="" />
           <div className="business">
@@ -44,21 +36,18 @@ function SubscriptionPlan() {
           </div>
           <div className="planprice">8,350</div>
         </div>
-      </Button>
+      </Button> */}
       <FormControl className={classes.formControl}>
-        {/* <InputLabel id="demo-controlled-open-select-label">Age</InputLabel> */}
         <Select
-          labelId="demo-controlled-open-select-label"
-          id="demo-controlled-open-select"
-          open={open}
-          onClose={handleClose}
-          onOpen={handleOpen}
           value={price}
           onChange={handleChange}
+          displayEmpty
+          className={classes.selectEmpty}
+          inputProps={{ "aria-label": "Without label" }}
         >
-          <MenuItem value="1">
+          <MenuItem value="" disabled>
             <div class="whole-wrap">
-              <img src="" alt="" />
+              <img src={icon1} alt="" />
               <div className="business">
                 <h3>Small Business</h3>
                 <span>Change Plan</span>
@@ -66,9 +55,19 @@ function SubscriptionPlan() {
               <div className="planprice">8,350</div>
             </div>
           </MenuItem>
-          <MenuItem value="2">
+          <MenuItem value={10}>
             <div class="whole-wrap">
-              <img src="" alt="" />
+              <img src={icon1} alt="" />
+              <div className="business">
+                <h3>Small Business</h3>
+                <span>Change Plan</span>
+              </div>
+              <div className="planprice">8,350</div>
+            </div>
+          </MenuItem>
+          <MenuItem value={20}>
+            <div class="whole-wrap">
+              <img src={icon1} alt="" />
               <div className="business">
                 <h3>Small Business</h3>
                 <span>Change Plan</span>

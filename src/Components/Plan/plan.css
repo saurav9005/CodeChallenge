@@ -1,0 +1,134 @@
+.PaymentMain {
+  padding: 30px 40px;
+}
+
+.PaymentMain h2 {
+  font-weight: 500;
+  font-size: 25px;
+  margin: 0;
+}
+
+.PaymentMain p {
+  color: #9ba2ab;
+  line-height: 27px;
+}
+
+.PaymentMain .MuiFormControl-root {
+  width: 100%;
+  border: 2px solid #3c68ff;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.PaymentMain .MuiFormControl-root .MuiSelect-root {
+  padding: 20px;
+}
+
+.MuiSvgIcon-root.MuiSelect-icon {
+  display: none;
+}
+
+.whole-wrap img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.business {
+  float: left;
+  padding: 10px 0;
+}
+
+.business h3 {
+  color: #3c3d3e;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+.business span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c68ff;
+}
+
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+  border: none;
+}
+
+.planprice::before {
+  position: absolute;
+  content: "$";
+  font-size: 0.6em;
+  top: -14px;
+  left: -18px;
+  font-weight: 100;
+  color: #9ba2ab;
+}
+
+.planprice::after {
+  content: "/year";
+  font-size: 0.5em;
+  right: -56px;
+  position: absolute;
+  top: 10px;
+  color: #9ba2ab;
+}
+
+.planprice {
+  float: right;
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+  margin-top: 25px;
+  margin-right: 60px;
+}
+
+.whole-wrap {
+  width: 100%;
+}
+
+.Payment {
+  margin-top: 50px;
+}
+.Payment h2 {
+  font-size: 22px;
+}
+.Payment ul {
+  list-style: none;
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.Payment ul li img {
+  float: left;
+  width: 63px;
+  height: 43px;
+  margin-right: 20px;
+}
+
+.Payment ul li {
+  width: 100%;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.cardInfo {
+  float: left;
+}
+
+.cardInfo h2 {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.Payment input {
+  float: right;
+  width: 63px;
+  height: 42px;
+  font-weight: 800;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 9px;
+}

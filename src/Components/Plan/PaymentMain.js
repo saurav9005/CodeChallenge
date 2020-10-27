@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import SubscriptionPlan from "./SubscriptionPlan";
+import PaymentDetails from "./PaymentDetails";
+import "./plan.css";
 
 class PaymentMain extends Component {
   render() {
@@ -11,6 +13,7 @@ class PaymentMain extends Component {
           premium plan as soon as possible
         </p>
         <SubscriptionPlan />
+        <PaymentDetails />
       </div>
     );
   }
