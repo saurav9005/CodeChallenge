@@ -33,7 +33,7 @@ class MainLayout extends Component {
             <Paper className={classes.paper}>
               <UserProfile />
             </Paper>
-            <Paper className={classes.paper}>
+            <Paper className={classes.paper} style={{ marginTop: "30px" }}>
               <SetPrice />
             </Paper>
           </Grid>
