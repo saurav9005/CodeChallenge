@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
-import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import icon1 from "./images/icon1.jpg";
@@ -59,10 +58,10 @@ function SubscriptionPlan() {
             <div class="whole-wrap">
               <img src={icon1} alt="" />
               <div className="business">
-                <h3>Small Business</h3>
+                <h3>Big Business</h3>
                 <span>Change Plan</span>
               </div>
-              <div className="planprice">8,350</div>
+              <div className="planprice">9,350</div>
             </div>
           </MenuItem>
           <MenuItem value={20}>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import userpic from "./userpic.jpg";
 import "./user.css";
 var user = {
   basicInfo: {
@@ -8,7 +9,6 @@ var user = {
     Followers: "980",
     Projects: "142",
     Rank: "129",
-    photo: "http://lorempixel.com/100/100/people/",
   },
 };
 
@@ -18,7 +18,7 @@ class UserProfile extends Component {
       <div id="user-profile">
         <div className="top">
           <div className="avatar">
-            <img alt="" src={user.basicInfo.photo} />
+            <img alt="" src={userpic} />
           </div>
           <h2>{user.basicInfo.name}</h2>
           <h3>{user.basicInfo.location}</h3>

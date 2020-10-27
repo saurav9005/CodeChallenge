@@ -1,5 +1,5 @@
 .PaymentMain {
-  padding: 30px 40px;
+  padding: 40px 40px 90px 40px;
 }
 
 .PaymentMain h2 {
@@ -131,4 +131,32 @@
   text-align: center;
   border: 1px solid #e2e2e2;
   border-radius: 9px;
+}
+
+.add-btn {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  color: #3c68ff;
+  font-size: 17px;
+  cursor: pointer;
+}
+.add-btn:focus {
+  outline: none;
+}
+
+.email {
+  width: 100%;
+  padding: 15px 8px;
+  margin: 30px 0;
+  border: 1px solid #e2e2e2;
+}
+
+.submit {
+  width: 100%;
+  background: #3c68ff;
+  color: white;
+  padding: 24px 0;
+  font-size: 19px;
+  border: none;
 }
