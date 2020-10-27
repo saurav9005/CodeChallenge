@@ -16,7 +16,6 @@ class PaymentMain extends Component {
   }
   toggleDisplay() {
     this.setState({
-      display: false,
       display: !this.state.display,
     });
   }
